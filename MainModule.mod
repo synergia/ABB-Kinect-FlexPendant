@@ -13,7 +13,7 @@ MODULE MainModule
     CONST num JOINT6MAX := 180;
     CONST num JOINT6MIN := -180;
     
-    CONST num EQUAL_CONDITION := 0.5;
+    CONST num EQUAL_CONDITION := 0.6;
     
     VAR bool flag_exec := FALSE;
     VAR bool flag_stop := FALSE;
@@ -56,14 +56,14 @@ MODULE MainModule
             ENDIF
             
             IF flag_exec = TRUE AND flag_out_of_range = FALSE THEN
-                ! MoveAbsJ destination_joints_angles, v200, fine, tool0;
-                MoveAbsJ dynamic_joints_angles, v200, fine, tool0;
+                MoveAbsJ destination_joints_angles, v200, fine, tool0;
+                ! MoveAbsJ dynamic_joints_angles, v200, z100, tool0;
                 
                 current_joints_angles := CJointT();
                 
-                IF compare_two_joints_angles(current_joints_angles, destination_joints_angles) = TRUE THEN
+                ! IF compare_two_joints_angles(current_joints_angles, destination_joints_angles) = TRUE THEN
                     flag_exec := FALSE;
-                ENDIF
+                ! ENDIF
             ENDIF
         ENDWHILE
     ENDPROC
