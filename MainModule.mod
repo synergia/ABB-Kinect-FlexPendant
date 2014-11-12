@@ -1,17 +1,17 @@
 MODULE MainModule
     ! if destination_joints_angles isn't in range program stopped
-    CONST num JOINT1MAX := 180;
-    CONST num JOINT1MIN := -180;
-    CONST num JOINT2MAX := 180;
-    CONST num JOINT2MIN := -180;
-    CONST num JOINT3MAX := 180;
-    CONST num JOINT3MIN := -180;
+    CONST num JOINT1MAX := 20;
+    CONST num JOINT1MIN := -20;
+    CONST num JOINT2MAX := 10;
+    CONST num JOINT2MIN := -10;
+    CONST num JOINT3MAX := 20;
+    CONST num JOINT3MIN := -20;
     CONST num JOINT4MAX := 180;
     CONST num JOINT4MIN := -180;
-    CONST num JOINT5MAX := 180;
-    CONST num JOINT5MIN := -180;
-    CONST num JOINT6MAX := 180;
-    CONST num JOINT6MIN := -180;
+    CONST num JOINT5MAX := 90;
+    CONST num JOINT5MIN := -90;
+    CONST num JOINT6MAX := 90;
+    CONST num JOINT6MIN := -90;
     
     CONST num EQUAL_CONDITION := 0.6;
     
