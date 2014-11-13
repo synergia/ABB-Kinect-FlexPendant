@@ -10,8 +10,8 @@ MODULE MainModule
     CONST num JOINT4MIN := -180;
     CONST num JOINT5MAX := 90;
     CONST num JOINT5MIN := -90;
-    CONST num JOINT6MAX := 90;
-    CONST num JOINT6MIN := -90;
+    CONST num JOINT6MAX := 80;
+    CONST num JOINT6MIN := -80;
     
     CONST num EQUAL_CONDITION := 0.6;
     
